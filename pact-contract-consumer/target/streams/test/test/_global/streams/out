@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(io.github.swaroopksahu.rest.StatusServiceConsumerPactTest, sbt.AnnotatedFingerprintWrapper@427f2e15, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(io.github.swaroopksahu.rest.RestBased, sbt.AnnotatedFingerprintWrapper@427f2e15, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(io.github.swaroopksahu.rest.ContactHandoffWorkFlowTest, org.scalatest.tools.Framework$$anon$1@7cb5bfe2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(io.github.swaroopksahu.rest.RestBasedPlain, sbt.AnnotatedFingerprintWrapper@427f2e15, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(io.github.swaroopksahu.event.AsyncMessageTest, sbt.AnnotatedFingerprintWrapper@427f2e15, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mContactHandoffWorkFlowTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 922 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 7, Failed 0, Errors 0, Passed 7[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.github.swaroopksahu.event.AsyncMessageTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.github.swaroopksahu.rest.RestBased[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.github.swaroopksahu.rest.ContactHandoffWorkFlowTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.github.swaroopksahu.rest.RestBasedPlain[0m
+[0m[[0m[0mdebug[0m] [0m[0m	io.github.swaroopksahu.rest.StatusServiceConsumerPactTest[0m

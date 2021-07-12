@@ -1,0 +1,36 @@
+{
+  "provider": {
+    "name": "my_http_provider"
+  },
+  "consumer": {
+    "name": "my-consumer"
+  },
+  "interactions": [
+    {
+      "description": "a query test interaction",
+      "request": {
+        "method": "GET",
+        "path": "/state"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "name": "harry"
+        }
+      },
+      "providerStates": [
+        {
+          "name": "a good state"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

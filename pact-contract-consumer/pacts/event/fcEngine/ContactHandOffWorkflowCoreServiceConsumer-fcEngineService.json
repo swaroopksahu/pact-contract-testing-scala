@@ -1,0 +1,96 @@
+{
+  "consumer": {
+    "name": "ContactHandOffWorkflowCoreServiceConsumer"
+  },
+  "provider": {
+    "name": "fcEngineService"
+  },
+  "messages": [
+    {
+      "description": "ContactHandOffWorkflow",
+      "metaData": {
+        "contentType": "application/json"
+      },
+      "contents": {
+        "handOffTo": "flow2",
+        "interactionId": "e2490de5-5bd3-43d5-b7c4-526e33f71304",
+        "flowContext": {
+
+        },
+        "isEntryPoint": false,
+        "eventType": "RoutingMessage",
+        "type": "ContactHandOffWorkflow",
+        "orgId": "e2490de5-5bd3-43d5-b7c4-526e33f71304",
+        "trackingId": "e2490de5-5bd3-43d5-b7c4-526e33f71304"
+      },
+      "matchingRules": {
+        "body": {
+          "$.orgId": {
+            "matchers": [
+              {
+                "match": "regex",
+                "regex": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+              }
+            ],
+            "combine": "AND"
+          },
+          "$.interactionId": {
+            "matchers": [
+              {
+                "match": "regex",
+                "regex": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+              }
+            ],
+            "combine": "AND"
+          },
+          "$.trackingId": {
+            "matchers": [
+              {
+                "match": "regex",
+                "regex": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+              }
+            ],
+            "combine": "AND"
+          },
+          "$.handOffTo": {
+            "matchers": [
+              {
+                "match": "type"
+              }
+            ],
+            "combine": "AND"
+          },
+          "$.isEntryPoint": {
+            "matchers": [
+              {
+                "match": "type"
+              }
+            ],
+            "combine": "AND"
+          }
+        }
+      },
+      "generators": {
+        "body": {
+          "$.orgId": {
+            "type": "Uuid"
+          },
+          "$.interactionId": {
+            "type": "Uuid"
+          },
+          "$.trackingId": {
+            "type": "Uuid"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

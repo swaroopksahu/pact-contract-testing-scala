@@ -1,0 +1,37 @@
+{
+  "provider": {
+    "name": "my_plain_http_provider"
+  },
+  "consumer": {
+    "name": "my-plain-consumer"
+  },
+  "interactions": [
+    {
+      "description": "a query test interaction",
+      "request": {
+        "method": "GET",
+        "path": "/state"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "body": "{\"name\": \"harry\"}SEG_PROFILE\n\"__ROW_TYPE\",__INTERVAL,agentName__s,_0\n3,0,null,0.0\n0,1620111600000,,0.0\n0,1620802800000,,0.0\n0,1620975600000,,0.0"
+      },
+      "providerStates": [
+        {
+          "name": "a good state"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

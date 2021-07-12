@@ -1,0 +1,62 @@
+{
+  "consumer": {
+    "name": "test_consumer_v3"
+  },
+  "provider": {
+    "name": "test_provider"
+  },
+  "messages": [
+    {
+      "description": "a test message",
+      "metaData": {
+        "contentType": "application/json"
+      },
+      "contents": {
+        "testParam1": "value3",
+        "testParam2": "value4"
+      },
+      "providerStates": [
+        {
+          "name": "SomeProviderState2"
+        }
+      ]
+    },
+    {
+      "description": "a test message",
+      "metaData": {
+        "destination": "X001",
+        "contentType": "application/json"
+      },
+      "contents": {
+        "testParam1": "value1",
+        "testParam2": "value2"
+      },
+      "providerStates": [
+        {
+          "name": "SomeProviderState"
+        }
+      ],
+      "matchingRules": {
+        "metadata": {
+          "destination": {
+            "matchers": [
+              {
+                "match": "regex",
+                "regex": "\\w+\\d+"
+              }
+            ],
+            "combine": "AND"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

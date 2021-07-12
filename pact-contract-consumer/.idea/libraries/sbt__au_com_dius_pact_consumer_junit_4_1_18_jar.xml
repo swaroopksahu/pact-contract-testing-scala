@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: au.com.dius.pact.consumer:junit:4.1.18:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/au/com/dius/pact/consumer/junit/4.1.18/junit-4.1.18.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/au/com/dius/pact/consumer/junit/4.1.18/junit-4.1.18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/au/com/dius/pact/consumer/junit/4.1.18/junit-4.1.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

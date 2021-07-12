@@ -1,0 +1,7 @@
+#Successful Tests
+#Mon Jul 12 17:55:04 IST 2021
+io.github.swaroopksahu.rest.RestBasedPlain=1626092704322
+io.github.swaroopksahu.rest.RestBased=1626092704429
+io.github.swaroopksahu.rest.StatusServiceConsumerPactTest=1626092704321
+io.github.swaroopksahu.event.AsyncMessageTest=1626092703821
+io.github.swaroopksahu.rest.ContactHandoffWorkFlowTest=1626092703836

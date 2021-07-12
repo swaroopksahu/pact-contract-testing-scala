@@ -1,0 +1,36 @@
+{
+  "provider": {
+    "name": "my_http_provider"
+  },
+  "consumer": {
+    "name": "my-other-consumer"
+  },
+  "interactions": [
+    {
+      "description": "another interesting interaction",
+      "request": {
+        "method": "GET",
+        "path": "/dummy"
+      },
+      "response": {
+        "status": 202,
+        "body": {
+          "message": "In-Progress"
+        }
+      },
+      "providerStates": [
+        {
+          "name": "another good state"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

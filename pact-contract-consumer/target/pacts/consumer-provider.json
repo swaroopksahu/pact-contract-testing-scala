@@ -1,0 +1,170 @@
+{
+  "provider": {
+    "name": "provider"
+  },
+  "consumer": {
+    "name": "consumer"
+  },
+  "interactions": [
+    {
+      "description": "status",
+      "request": {
+        "method": "POST",
+        "path": "/status",
+        "headers": {
+          "testreqheader": "testreqheadervalue"
+        },
+        "body": {
+          "anchorId": "2",
+          "dateBegin": [
+            1619852400000
+          ],
+          "dateEnd": [
+            1621062000000
+          ],
+          "timezone": "America/Los_Angeles",
+          "numberOfRecords": 1000000,
+          "lastNRecords": false,
+          "filterGroups": [
+            {
+              "operator": "AND",
+              "valueFilters": [
+
+              ]
+            },
+            {
+              "operator": "OR",
+              "valueFilters": [
+                {
+                  "columnName": "teamSystemId__s",
+                  "value": "AXhtQPltLFzF9Q3k41bd",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "teamSystemId__s",
+                  "value": "AXPiuyX_QsskgWmGhHYF",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "teamSystemId__s",
+                  "value": "NA",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "valueFilters": [
+                {
+                  "columnName": "siteSystemId__s",
+                  "value": "AXhtP4D0KG6QduY0TQMa",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "siteSystemId__s",
+                  "value": "AXJaa8TbIwL7fuV2v_05",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "siteSystemId__s",
+                  "value": "NA",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "valueFilters": [
+                {
+                  "columnName": "queueSystemId__s",
+                  "value": "AXJ5JVZ4BdoJvrEovWeV",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "queueSystemId__s",
+                  "value": "AXPit39z9ic5vAs7Lrib",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "queueSystemId__s",
+                  "value": "AXPmiEzCQsskgWmGhUqs",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                },
+                {
+                  "columnName": "queueSystemId__s",
+                  "value": "NA",
+                  "operator": "EQUAL",
+                  "includeIfColumnNotPresent": false
+                }
+              ]
+            }
+          ],
+          "activityType": "INTERACTION",
+          "aggregateQueryProperties": {
+            "computeInterval": 1,
+            "computeIntervalUnit": "DAYS",
+            "lookbackCount": 0,
+            "frequency": 0,
+            "movingWindow": false,
+            "cumulative": false,
+            "rowSegmentSet": [
+              {
+                "columnName": "agentName__s",
+                "name": "agentName__s",
+                "rangeBased": false,
+                "regexBased": false
+              }
+            ],
+            "columnSegmentSet": [
+
+            ],
+            "queryType": "TEMPORAL",
+            "requestType": "SEG_PROFILE",
+            "intervalAxis": "ROW",
+            "computeSummaries": true
+          },
+          "aggregations": [
+            {
+              "id": 0,
+              "filterGroups": [
+                {
+                  "operator": "AND",
+                  "valueFilters": [
+
+                  ]
+                }
+              ],
+              "aggregationType": "SUM",
+              "computeColumnName": "talkCount__i"
+            }
+          ]
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "testreqheader": "testreqheadervalue",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "body": "{\"query\":{\"dateBegin\":[1619852400000],\"dateEnd\":[1621062000000],\"timezone\":\"America/Los_Angeles\",\"numberOfRecords\":1000000,\"lastNRecords\":false,\"filterGroups\":[{\"operator\":\"AND\",\"valueFilters\":[]},{\"operator\":\"OR\",\"valueFilters\":[{\"columnName\":\"teamSystemId__s\",\"value\":\"AXhtQPltLFzF9Q3k41bd\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"teamSystemId__s\",\"value\":\"AXPiuyX_QsskgWmGhHYF\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"teamSystemId__s\",\"value\":\"NA\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false}]},{\"operator\":\"OR\",\"valueFilters\":[{\"columnName\":\"siteSystemId__s\",\"value\":\"AXhtP4D0KG6QduY0TQMa\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"siteSystemId__s\",\"value\":\"AXJaa8TbIwL7fuV2v_05\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"siteSystemId__s\",\"value\":\"NA\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false}]},{\"operator\":\"OR\",\"valueFilters\":[{\"columnName\":\"queueSystemId__s\",\"value\":\"AXJ5JVZ4BdoJvrEovWeV\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"queueSystemId__s\",\"value\":\"AXPit39z9ic5vAs7Lrib\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"queueSystemId__s\",\"value\":\"AXPmiEzCQsskgWmGhUqs\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false},{\"columnName\":\"queueSystemId__s\",\"value\":\"NA\",\"operator\":\"EQUAL\",\"includeIfColumnNotPresent\":false}]}],\"activityType\":\"INTERACTION\",\"aggregateQueryProperties\":{\"computeInterval\":1,\"computeIntervalUnit\":\"DAYS\",\"lookbackCount\":0,\"frequency\":0,\"cumulative\":false,\"rowSegmentSet\":[{\"columnName\":\"agentName__s\",\"name\":\"agentName__s\",\"rangeBased\":false,\"regexBased\":false}],\"columnSegmentSet\":[],\"queryType\":\"TEMPORAL\",\"requestType\":\"SEG_PROFILE\",\"intervalAxis\":\"ROW\",\"computeSummaries\":true},\"aggregations\":[{\"filterGroups\":[{\"operator\":\"AND\",\"valueFilters\":[]}],\"aggregationType\":\"SUM\",\"computeColumnName\":\"talkCount__i\",\"id\":0}],\"anchorId\":\"2\"},\"lastAccessTimestamp\":0,\"numberOfRecordsFound\":11626,\"numberOfRecordsInDataset\":11626,\"isComplete\":true}\nSEG_PROFILE\n\"__ROW_TYPE\",__INTERVAL,agentName__s,_0\n3,0,null,0.0\n0,1620111600000,,0.0\n0,1620802800000,,0.0\n0,1620975600000,,0.0\n"
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.18"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/swarsahu/git/pact-contract-testing-scala/pact-contract-consumer/target/scala-2.12/test-classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DSLGenerator$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConsumerClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StatusServiceConsumerPactTest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Constants.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DSLGenerator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BaseConsumerContractTest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Constants$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AsyncMessageTest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestBased.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ContactHandoffWorkFlowTest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StatusServiceConsumerPactTest$StatusServiceClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestBasedPlain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/swarsahu/git/pact-contract-testing-scala/pact-contract-consumer/target/scala-2.12/test-classes.bak[0m
